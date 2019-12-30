@@ -4,6 +4,9 @@ using Newtonsoft.Json;
 using System.Text.RegularExpressions;
 
 namespace StudentVueAPI {
+	/// <summary>
+	/// The StudentVue class
+	/// </summary>
 	public class StudentVue : StudentVueAPI {
 		private string _districtDomain;
 
@@ -26,6 +29,9 @@ namespace StudentVueAPI {
 			return list;
 		}
 
+		/// <summary>
+		/// Returns a GPARank object
+		/// </summary>
 		public override GPARank GetGPARank() {
 			// Get the course history page and pull data from it
 			BrowserSession.GET(string.Format("https://{0}/PXP2_CourseHistory.aspx?AGU=0", _districtDomain));

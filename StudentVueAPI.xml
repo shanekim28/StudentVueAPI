@@ -4,6 +4,11 @@
         <name>StudentVueAPI</name>
     </assembly>
     <members>
+        <member name="P:StudentVueAPI.BrowserSession.ResponseUri">
+            <summary>
+            The uri of the HTTP response
+            </summary>
+        </member>
         <member name="M:StudentVueAPI.BrowserSession.GET(System.String)">
             <summary>
             Performs an HTTP GET request to a given URL. Returns the response body

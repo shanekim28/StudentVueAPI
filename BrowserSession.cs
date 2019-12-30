@@ -6,6 +6,9 @@ using System.Text;
 namespace StudentVueAPI {
 	public static class BrowserSession {
 		public static HtmlDocument HtmlDoc { get; set; }
+		/// <summary>
+		/// The uri of the HTTP response
+		/// </summary>
 		public static string ResponseUri { get; set; }
 
 		static CookieContainer cookieContainer = new CookieContainer();
