@@ -11,7 +11,8 @@ Install-Package Newtonsoft.Json
 ```
 
 ## Logging In
-Add the StudentVueAPI reference in your project file and its required dependencies.
+Add the StudentVueAPI reference in your project file and its required dependencies. Don't forget to add the StudentVueAPI.xml documentation file
+
 Create a new StudentVue object and call Login() with the username, password, and district domain as parameters.
 ```
 using StudentVueAPI;
@@ -21,7 +22,7 @@ studentVue.Login("username", "password", "domain");
 ```
 
 ## Documentation
-Documentation coming soon.
+Documentation can be found within each .cs file and the .xml documentation file when importing into a project.
 
 ## TODO
 - [ ] Write documentation
