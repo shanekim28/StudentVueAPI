@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StudentVueAPI</name>
+    </assembly>
+    <members>
+        <member name="P:StudentVueAPI.BrowserSession.ResponseUri">
+            <summary>
+            The uri of the HTTP response
+            </summary>
+        </member>
+        <member name="M:StudentVueAPI.BrowserSession.GET(System.String)">
+            <summary>
+            Performs an HTTP GET request to a given URL. Returns the response body
+            </summary>
+        </member>
+        <member name="M:StudentVueAPI.BrowserSession.POST(System.String,System.String,System.String)">
+            <summary>
+            Performs an HTTP POST request to a given URL with a given request body and content type. Returns the response body
+            </summary>
+        </member>
+        <member name="M:StudentVueAPI.BrowserSession.AddPostData(System.Net.HttpWebRequest,System.String)">
+            <summary>
+            Adds the body content to the POST request
+            </summary>
+        </member>
+        <member name="M:StudentVueAPI.BrowserSession.AddCookiesTo(System.Net.HttpWebRequest)">
+            <summary>
+            Adds existing cookies to the request
+            </summary>
+        </member>
+        <member name="M:StudentVueAPI.BrowserSession.SaveCookiesFrom(System.Net.HttpWebResponse)">
+            <summary>
+            Saves new cookies from the response
+            </summary>
+        </member>
+        <member name="M:StudentVueAPI.BrowserSession.ParseResponseBody(System.String)">
+            <summary>
+            Saves the response body. Could also be a JSON body
+            </summary>
+            <param name="_responseBodyText"></param>
+        </member>
+        <member name="T:StudentVueAPI.StudentVue">
+            <summary>
+            The StudentVue class
+            </summary>
+        </member>
+        <member name="M:StudentVueAPI.StudentVue.GetGradeBook">
+            <summary>
+            Returns a list of Grade objects
+            </summary>
+        </member>
+        <member name="M:StudentVueAPI.StudentVue.GetGPARank">
+            <summary>
+            Returns a GPARank object
+            </summary>
+        </member>
+        <member name="M:StudentVueAPI.StudentVue.GetSchedule">
+            <summary>
+            Returns a list of Course objects
+            </summary>
+        </member>
+        <member name="M:StudentVueAPI.StudentVue.GetSchoolInfo">
+            <summary>
+            Returns a SchoolInfo object
+            </summary>
+        </member>
+        <member name="M:StudentVueAPI.StudentVue.GetStudentInfo">
+            <summary>
+            Returns a StudentInfo object
+            </summary>
+        </member>
+        <member name="M:StudentVueAPI.StudentVue.Login(System.String,System.String,System.String)">
+            <summary>
+            Logs into StudentVue. The districtDomain is the domain name of the school's StudentVue portal
+            </summary>
+        </member>
+    </members>
+</doc>
