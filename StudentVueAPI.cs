@@ -14,10 +14,10 @@ namespace StudentVueAPI {
 	}
 
 	public class Course {
-		public long Period { get; }
-		public string CourseTitle { get; }
-		public string TeacherName { get; }
-		public string RoomName { get; }
+		public long Period { get; set; }
+		public string CourseTitle { get; set; }
+		public string TeacherName { get; set; }
+		public string RoomName { get; set; }
 
 		public Course(long period, string courseTitle, string teacherName, string roomName) {
 			Period = period;
@@ -28,8 +28,8 @@ namespace StudentVueAPI {
 	}
 
 	public class GPARank {
-		public string GPA { get; }
-		public string Rank { get; }
+		public string GPA { get; set; }
+		public string Rank { get; set; }
 
 		public GPARank(string gpa, string rank) {
 			GPA = gpa;
@@ -39,9 +39,9 @@ namespace StudentVueAPI {
 
 	public class Grade {
 		[JsonProperty("Course Title")]
-		public string CourseTitle { get; }
-		public string Mark { get; }
-		public float Score { get; }
+		public string CourseTitle { get; set; }
+		public string Mark { get; set; }
+		public float Score { get; set; }
 
 		public Grade(string courseTitle, string mark, float score) {
 			CourseTitle = courseTitle;
@@ -51,26 +51,26 @@ namespace StudentVueAPI {
 	}
 
 	public class StudentInfo {
-		public string Name { get; }
+		public string Name { get; set; }
 		[JsonProperty("User ID")]
-		public string UserID { get; }
+		public string UserID { get; set; }
 		[JsonProperty("Home Address")]
-		public string HomeAddress { get; }
+		public string HomeAddress { get; set; }
 		[JsonProperty("Mail Address")]
-		public string MailAddress { get; }
+		public string MailAddress { get; set; }
 		[JsonProperty("Phone Numbers")]
-		public string PhoneNumbers { get; }
+		public string PhoneNumbers { get; set; }
 	}
 
 	public partial class SchoolInfo {
-		public string Principal { get; }
+		public string Principal { get; set; }
 		[JsonProperty("School Name")]
-		public string SchoolName { get; }
-		public string Address { get; }
-		public string Phone { get; }
-		public string Fax { get; }
+		public string SchoolName { get; set; }
+		public string Address { get; set; }
+		public string Phone { get; set; }
+		public string Fax { get; set; }
 		[JsonProperty("Website URL")]
-		public string WebsiteURL { get; }
+		public string WebsiteURL { get; set; }
 	}
 
 
